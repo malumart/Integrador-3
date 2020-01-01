@@ -200,10 +200,16 @@ const confirmarCompra = (carrito) =>{
         let totalSinDescuento = subtotalDeCompra(carrito)
         let nuevoTotal = totalDescuento(carrito)
         let ahorro = totalSinDescuento - nuevoTotal
+        if (ahorro != 0){
         alert (`
                 El total de su compra sin descuento es: $ ${totalSinDescuento}
                 El nuevo total con descuento es: $ ${nuevoTotal}
                 Usted ahorro: $${ahorro}! 🎉`)
+        } else{
+          alert( `
+                El total de su compra es: $ ${totalSinDescuento}
+                El producto no calificaba para descuento 😓 `)
+        }
       }else{
         alert(`El codigo ingresado no es correcto`)
       }
