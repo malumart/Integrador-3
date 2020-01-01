@@ -246,7 +246,6 @@ const cancelarCompra = () => {
   let confirmarOperacion = prompt (` Esta seguro de que desea cancelar la compra? (SI-NO)`)
   if (confirmarOperacion =="SI"){
     saludoDespedida();
-    return operacion="7";
   }
   
 }
@@ -269,7 +268,8 @@ const mostrarProductos = (arrayProductos) => {
 }
 
 const saludoDespedida = () => {
-  alert( `Gracias por visitarnos! Esperamos verlo pronto 💖`)
+  alert( `Gracias por visitarnos! Esperamos verlo pronto 💖`);
+  return operacion="7";
 }
 
 //MENU PRINCIPAL
